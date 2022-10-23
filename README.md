@@ -3,23 +3,23 @@ Gitlet is a version-control system that mimics some of the basic features of the
 
 ## Commands
 ### init 
-Usage: `java gitlet.Main init`
+Usage: `java gitlet.Main init`  
 Function: Creates a new Gitlet version-control system in the current directory.
 
 ### add
-Usage: `java gitlet.Main add [file name]`
+Usage: `java gitlet.Main add [file name]`  
 Function: Adds a copy of the file as it currently exists to the staging area.
 
 ### commit
-Usage: `java gitlet.Main commit [message]`
+Usage: `java gitlet.Main commit [message]`  
 Function: Saves a snapshot of tracked files in the current commit and staging area so they can be restored at a later time, creating a new commit.
 
 ### rm
-Usage: `java gitlet.Main rm [file name]`
+Usage: `java gitlet.Main rm [file name]`  
 Function: Unstage the file if it is currently staged for addition.
 
 ### log
-Usage: `java gitlet.Main log`
+Usage: `java gitlet.Main log`  
 Function: Starting at the current head commit, display information about each commit backwards along the commit tree until the initial commit, following the first parent commit links, ignoring any second parents found in merge commits.
 
 ### global-log
