@@ -19,11 +19,11 @@ Usage: `java gitlet.Main rm [file name]`
 Function: Unstage the file if it is currently staged for addition.
 
 ### log
-Usage: `java gitlet.Main log`  
+Usage: `java gitlet.Main log`    
 Function: Starting at the current head commit, display information about each commit backwards along the commit tree until the initial commit, following the first parent commit links, ignoring any second parents found in merge commits.
 
 ### global-log
-Usage: `java gitlet.Main global-log`
+Usage: `java gitlet.Main global-log`  
 Function: Like log, except displays information about all commits ever made.
 
 ### find
@@ -31,14 +31,14 @@ Usage: `java gitlet.Main find [commit message]`
 Function: Prints out the ids of all commits that have the given commit message.
 
 ### status
-Usage: `java gitlet.Main status`
+Usage: `java gitlet.Main status`  
 Function: Displays what branches currently exist, and marks the current branch with a *. Also displays what files have been staged for addition or removal.
 
 ### checkout
 Usage:
 1. `java gitlet.Main checkout -- [file name]`
 2. `java gitlet.Main checkout [commit id] -- [file name]`
-3. `java gitlet.Main checkout [branch name]`
+3. `java gitlet.Main checkout [branch name]`  
 Functions: 
 1. Takes the version of the file as it exists in the head commit and puts it in the working directory, overwriting the version of the file that’s already there if there is one.
 2. Takes the version of the file as it exists in the commit with the given id, and puts it in the working directory, overwriting the version of the file that’s already there if there is one.
@@ -46,18 +46,18 @@ Functions:
 
 
 ### branch
-Usage: `java gitlet.Main branch [branch name]`
+Usage: `java gitlet.Main branch [branch name]`  
 Function: Creates a new branch with the given name, and points it at the current head commit.
 
 ### rm-branch
-Usage: `java gitlet.Main rm-branch [branch name]`
+Usage: `java gitlet.Main rm-branch [branch name]`  
 Function: Deletes the branch with the given name.
 
 ### reset
-Usage: `java gitlet.Main reset [commit id]`
+Usage: `java gitlet.Main reset [commit id]`  
 Function: Checks out all the files tracked by the given commit. Removes tracked files that are not present in that commit. Also moves the current branch’s head to that commit node.
 
 ### merge
-Usage: `java gitlet.Main merge [branch name]`
+Usage: `java gitlet.Main merge [branch name]`  
 Function: Merges files from the given branch into the current branch.
 
