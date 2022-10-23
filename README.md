@@ -27,7 +27,7 @@ Usage: `java gitlet.Main global-log`
 Function: Like log, except displays information about all commits ever made.
 
 ### find
-Usage: `java gitlet.Main find [commit message]`
+Usage: `java gitlet.Main find [commit message]`  
 Function: Prints out the ids of all commits that have the given commit message.
 
 ### status
@@ -38,7 +38,8 @@ Function: Displays what branches currently exist, and marks the current branch w
 Usage:
 1. `java gitlet.Main checkout -- [file name]`
 2. `java gitlet.Main checkout [commit id] -- [file name]`
-3. `java gitlet.Main checkout [branch name]`  
+3. `java gitlet.Main checkout [branch name]`
+  
 Functions: 
 1. Takes the version of the file as it exists in the head commit and puts it in the working directory, overwriting the version of the file that’s already there if there is one.
 2. Takes the version of the file as it exists in the commit with the given id, and puts it in the working directory, overwriting the version of the file that’s already there if there is one.
